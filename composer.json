@@ -1,5 +1,5 @@
 {
-    "name": "ansible",
+    "name": "ptica/ansible",
     "authors": [
         {
             "name": "Jan Ptacek",
