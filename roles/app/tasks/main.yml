@@ -1,2 +1,25 @@
 ---
 # application tasks to be customized and to run after the main provision
+- name: global bower
+  npm: name=bower global=yes
+
+- name: global grunt-cli
+  npm: name=grunt-cli global=yes
+
+- name: npm install
+  npm: path=/vagrant
+
+- name: composer install
+  composer: command=install working_dir=/vagrant
+
+- name: bower install
+  command: "bower install"
+  args:
+    chdir: /vagrant
+  sudo: no
+
+- name: grunt
+  command: "grunt"
+  args:
+    chdir: /vagrant
+  sudo: no

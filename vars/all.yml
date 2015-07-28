@@ -3,7 +3,7 @@ server:
     install: '1'
     packages: [git, vim, nodejs, imagemagick]
     timezone: Europe/Prague
-    locale: en_US.UTF-8
+    locale: cs_CZ.UTF-8
 vagrant_local:
     install: '1'
     vm: { base_box: trusty64, hostname: default, ip: 192.168.192.168, memory: '512', sharedfolder: ./, enableWindows: '1', useVagrantCloud: '1', syncType: nfs }
