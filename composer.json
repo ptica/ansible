@@ -1,0 +1,10 @@
+{
+    "name": "ptica/ansible",
+    "authors": [
+        {
+            "name": "Jan Ptacek",
+            "email": "jan.ptacek@gmail.com"
+        }
+    ],
+    "require": {}
+}
