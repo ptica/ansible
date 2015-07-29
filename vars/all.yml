@@ -14,8 +14,8 @@ nginx:
 mysql:
     install: '1'
     root_password: '123'
-    database: db
-    user: user
+    database: database_name
+    user: login
     password: password
     dump: Config/Schema/tables.sql
 php:
