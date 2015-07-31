@@ -10,8 +10,6 @@
     - curl
     - wget
     - python-software-properties
-    - nodejs-legacy
-    - npm
 
 - name: Install Extra Packages
   sudo: yes
@@ -30,4 +28,3 @@
 - name: Set default system language pack
   shell: locale-gen {{server.locale}}
   sudo: yes
-

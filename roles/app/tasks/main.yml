@@ -23,3 +23,16 @@
   args:
     chdir: /vagrant
   sudo: no
+
+- name: copy Config/database.php
+  command: "cp database.php.default database.php"
+  args:
+    chdir: /vagrant/Config
+    creates: /vagrant/Config/database.php
+
+- name: adminer
+  get_url:
+    url: "http://www.adminer.org/latest-mysql-en.php"
+    dest: /vagrant/webroot/ad.php
+    mode: 0644
+    force: true

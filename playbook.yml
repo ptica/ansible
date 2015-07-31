@@ -10,4 +10,5 @@
     - mysql
     - php
     - composer
+    - nodesource.node
     - app
