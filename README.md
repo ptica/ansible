@@ -16,7 +16,7 @@ Roles and tasks included:
 ```
 bower install ptica/ansible --save
 cp Vendor/ansible/Vagrantfile.default Vagrantfile
-cp Vendor/ansible/vars/all.yml Config/ansible/vars/all.yml
+mkdir -p Config/ansible/vars/ && cp Vendor/ansible/vars/all.yml Config/ansible/vars/all.yml
 vim Vagrantfile # name your box there
 ```
 
