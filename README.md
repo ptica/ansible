@@ -22,8 +22,8 @@ cp Vendor/ansible/vars/all.yml.default TODO_SOMEWHERE
 
 # TODOs
 
- * [ ] include Vagrantfile.default to copy into fresh project dir
- * [ ] move `vars/all.yml` settings into project directory
+ * [x] include Vagrantfile.default to copy into fresh project dir
+ * [x] include `app/Config/ansiblevars/all.yml` settings from app directory
  * [ ] for win users think about configuring ssh keys for git commits
  * [ ] clear cache during provisioning so there is no right conflict?
  * [ ] bash autocomplete on guest
